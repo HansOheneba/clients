@@ -3,7 +3,7 @@ import Stripe from "stripe";
 import { supabaseAdmin } from "@/lib/supabaseAdmin";
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
-  apiVersion: "2026-05-27.dahlia" as Stripe.LatestApiVersion,
+  apiVersion: "2026-05-27.dahlia",
 });
 
 const HANDLED_EVENTS: Stripe.Event.Type[] = [
